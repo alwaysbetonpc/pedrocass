@@ -1,0 +1,15 @@
+dias_da_semana = ["segunda", "terça", "quarta", "quinta", "sexta", "sábado", "domingo"]
+
+dias_uteis = []
+
+for dia in dias_da_semana[:5]:
+    dias_uteis.append(dia + "-feira")
+
+entrada = input("Digite um dia da semana: ").lower()
+
+if entrada in dias_da_semana[:5]:
+    print(f"{entrada.capitalize()}-feira é um dia útil.")
+elif entrada in dias_da_semana[5:]:
+    print(f"{entrada.capitalize()} não é um dia útil.")
+else:
+    print("Digite um dia da semana válido.")
